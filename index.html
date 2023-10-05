@@ -1,79 +1,12 @@
-PS C:\Users\HP\IETStudy> git branch darpan
-PS C:\Users\HP\IETStudy> git checkout darpan
-Switched to branch 'darpan'
-PS C:\Users\HP\IETStudy> git status
-On branch darpan
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   README.md
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        index.html
-
-no changes added to commit (use "git add" and/or "git commit -a")
-PS C:\Users\HP\IETStudy> git add .
-PS C:\Users\HP\IETStudy> git add .                  
-PS C:\Users\HP\IETStudy> git status
-On branch darpan
-Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
-        modified:   README.md
-
-PS C:\Users\HP\IETStudy> git log
-commit 2151564a810e9c6a911322ff61406ec4f005d74c (HEAD -> darpan, origin/main, origin/HEAD, main)
-Author: Ritesh Singh <singhkuritesh1@gmail.com>
-Date:   Tue Oct 3 21:51:38 2023 +0530
-
-    Initial commit
-PS C:\Users\HP\IETStudy> git add .
-PS C:\Users\HP\IETStudy> git commit -m "indec.html added"
-[darpan 0da9c79] indec.html added
- 1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 index.html
-PS C:\Users\HP\IETStudy> git branch
-* darpan
-  main
-PS C:\Users\HP\IETStudy> git add .
-PS C:\Users\HP\IETStudy> git commit -m "README.md modified"
-[darpan 82baf96] README.md modified
- 2 files changed, 13 insertions(+)
-PS C:\Users\HP\IETStudy> git log
-commit 82baf96364de3e9d66beb8f07b5997c300971381 (HEAD -> darpan)
-Author: Darpan Porwal <darpanp2308@gmail.com>
-Date:   Fri Oct 6 01:09:37 2023 +0530
-
-    README.md modified
-
-commit 0da9c7950e7791702355633ac0be039fd6b9e2f4
-Author: Darpan Porwal <darpanp2308@gmail.com>
-Date:   Fri Oct 6 01:07:32 2023 +0530
-
-    indec.html added
-
-commit 2151564a810e9c6a911322ff61406ec4f005d74c (origin/main, origin/HEAD, main)
-Author: Ritesh Singh <singhkuritesh1@gmail.com>
-Date:   Tue Oct 3 21:51:38 2023 +0530
-
-    Initial commit
-PS C:\Users\HP\IETStudy> git reset 0da9c7950e7791702355633ac0be039fd6b9e2f4
-Unstaged changes after reset:
-M       README.md
-M       index.html
-PS C:\Users\HP\IETStudy> git reset 2151564a810e9c6a911322ff61406ec4f005d74c
-Unstaged changes after reset:
-M       README.md
-PS C:\Users\HP\IETStudy> git status
-On branch darpan
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   README.md
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        index.html
-
-no changes added to commit (use "git add" and/or "git commit -a")
-PS C:\Users\HP\IETStudy>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IETStudy</title>
+</head>
+<body>
+    <h1><b>IETStudy</b></h1>
+    <h3>IETStudy is a collaborative platform for students at IET DAVV to share study materials, connect with seniors, and enhance their academic experience. Join us to excel in your studies and foster a vibrant learning community.</h3>   
+</body>
+</html>
