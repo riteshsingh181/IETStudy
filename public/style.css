@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins';
+    background-color: #222223;
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    margin-top: 20px;
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;  
+    width: 70%;
+}
+
+header span{
+    justify-self: flex-start;
+    width: 20%;
+    font-size: 1.2rem;
+    font-family: 'Poppins';
+    padding: 5px;
+}
+
+nav ul{
+    display: flex;
+    width: 75%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav ul li, nav ul button{
+    margin-right: 25px;
+    padding: 5px;
+    list-style-type: none;
+    font-size: 0.9rem;
+}
+
+nav ul button{
+    color: white;
+    padding: 18px 35px;
+    border-radius: 50px;
+    font-family: 'Poppins';
+    background: none;
+    border: 2px solid;
+    cursor: pointer;
+}
+
+nav ul button:hover{
+    color: black;
+    background: rgb(255,229,130);
+    background: linear-gradient(129deg, rgba(255,229,130,1) 0%, rgba(204,255,153,1) 100%);
+}
+
+main{
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 25px;
+}
+
+.main-text{
+    width: 38%;
+    height: 100%;
+    padding: 20px 30px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main-image{
+    width: 45%;
+    height: 75%;
+    padding: 20px 0;
+    background-color: rgb(175, 255, 255);
+    border-radius: 50px;
+}
+
+main h1{
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+
+main p{
+    margin: 10px 0;
+}
+
+.main-text button{
+    cursor: pointer;
+    padding: 17px 42px;
+    margin: 10px 0;
+    font-family: 'Poppins';
+    border: none;
+    margin-right: 15px;
+    background-color: rgb(209, 255, 118);
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    background: rgb(255,229,130);
+    background: linear-gradient(129deg, rgba(255,229,130,1) 0%, rgba(204,255,153,1) 100%);
+}
+
+.main-text button#learn-more{
+    background: none;
+    color: white;
+    transition: 0.5s ease;
+}
+
+.main-text button#learn-more:hover{
+    color: rgb(189, 255, 123);
+}
+
+
+.statistics{
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 25vh;
+    border-radius: 50px;
+    backdrop-filter: blur(55px);
+    margin-top: 25px;
+}
+
+.circle-spread-1{
+    background: rgb(204,255,153);
+    background: radial-gradient(circle, rgba(204,255,153,1) 0%, rgba(0,0,0,1) 100%);position: absolute;
+    z-index: -5;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    opacity: 0.4;
+    top: 825px;
+    left: 400px;
+}
+
+.circle-spread-2{
+    background: rgb(255,230,137);
+    background: radial-gradient(circle, rgba(255,230,137,1) 0%, rgba(0,0,0,1) 100%);  position: absolute;
+    z-index: -5;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    opacity: 0.8;
+    top: 900px;
+    right: 400px;
+}
+
+.statistics div h3{
+    font-size: 45px;
+}
+
+.statistics .users-head{
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-bottom: 25px;
+}
+
+.statistics .users-head h6{
+    font-weight: 300;
+    font-size: 20px;
+    padding-right: 15px;
+}
+
+.statistics .users-head h4{
+    font-size: 30px;
+    font-weight: 600;
+    padding-left: 15px;
+}
+
+.statistics div#users{
+    display: flex;
+    flex-direction: column;
+}
+
+.statistics div#users-img{
+    display: flex;
+}
+
+.statistics div#users .user-img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.statistics div#users .user-img:nth-child(2n){
+    background-color: bisque;
+}
+
+.statistics div#users .user-img:nth-child(2n+1){
+    background-color: burlywood;
+}
+
+#user-img-1{
+    left: 50px;
+}
+
+#user-img-2{
+    left: 25px;
+}
+
+#user-img-3{
+    left: 0px;
+}
+
+#user-img-4{
+    left: -25px;
+}
+
+#user-img-5{
+    left: -50px;
+}
+
+.trending{
+    margin-top: 25px;
+    height: 100vh;
+    padding: 25px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trending-banner{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.trending .trending-banner .trending-img{
+    width: 300px;
+    height: 215px;
+    background-color: burlywood;
+    margin: 35px 10px;
+    border-radius: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.trending-content{
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 60%;
+    padding: 10px 20px;
+}
+
+.trending-content p, .top-list-content p{
+    font-size: 17px;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.trending-content h2 ~ p, .top-list-content h2 ~ p{
+    font-size: 15px;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.trending-content h2, .top-list-content h2{
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 5rem;
+}
+
+.trending-content h5, .top-list-content h5{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.trending-img .book-cover{
+    width: 70%;
+    height: 250px;
+    position: relative;
+    border-radius: 20px 20px 0 0;
+    opacity: 1;
+    background: url("bookcover.jpg");
+    background-size: cover;
+}
+
+.top-list-artist{
+    width: 80%;
+    height: 80vh;
+    background-color: rgb(85, 85, 85);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-list-content{
+    background-color: darkgreen;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 60%;
+    padding: 10px 20px;
+}
+
+.top-list-banner{
+    width: 70%;
+    background-color: cadetblue;   
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.top-list-img{
+    width: 500px;
+    height: 200px;
+    background-color: darkblue;
+    padding: 15px 25px;
+}
