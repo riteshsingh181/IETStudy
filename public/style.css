@@ -16,9 +16,9 @@ body{
 }
 
 header{
-    margin-top: 20px;
+    margin-top: 15px;
     height: 8vh;
-    width: 100%;
+    width: 97%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,21 +69,21 @@ nav ul button:hover{
 }
 
 main{
-    height: 80vh;
+    height: 85vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 25px;
+    padding: 10px;
+    margin-top: 10px;
 }
 
 .main-text{
     width: 38%;
-    height: 100%;
-    padding: 20px 30px;
+    padding: 5px 10px;
     height: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .main-image{
@@ -95,12 +95,22 @@ main{
 }
 
 main h1{
-    font-size: 4.5rem;
+    font-size: 4.25rem;
     font-weight: 600;
+    padding-bottom: 10px;
+    line-height: 5.5rem;
+}
+
+main h3{
+    font-size: 1.15rem;
+    font-weight: 400;
+    opacity: 0.9;
 }
 
 main p{
+    font-size: 0.95rem;
     margin: 10px 0;
+    opacity: 0.8;
 }
 
 .main-text button{
@@ -130,17 +140,40 @@ main p{
 
 
 .statistics{
-    width: 70%;
+    width: 80%;
     background-color: rgba(255, 255, 255, 0.1);
-    padding: 25px;
+    padding: 25px 15px;
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 25vh;
+    height: 42vh;
     border-radius: 50px;
     backdrop-filter: blur(55px);
-    margin-top: 25px;
+    margin-top: 100px;
+}
+
+#statheadline{
+    width: 95%;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+#statheadline h2{
+    font-weight: 600;
+    letter-spacing: 0.01rem;
+}
+
+#statheadline p{
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+#statcontent{
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
 }
 
 .circle-spread-1{
@@ -151,8 +184,8 @@ main p{
     height: 125px;
     border-radius: 50%;
     opacity: 0.4;
-    top: 825px;
-    left: 400px;
+    top: 950px;
+    left: 410px;
 }
 
 .circle-spread-2{
@@ -163,16 +196,17 @@ main p{
     height: 100px;
     border-radius: 50%;
     opacity: 0.8;
-    top: 900px;
-    right: 400px;
+    top: 1025px;
+    right: 450px;
 }
 
 .statistics div h3{
+    margin-top: 5px;
     font-size: 45px;
 }
 
 .statistics .users-head{
-    margin-left: 50px;
+    margin-left: 40px;
     display: flex;
     align-items: center;
     width: fit-content;
@@ -181,19 +215,20 @@ main p{
 
 .statistics .users-head h6{
     font-weight: 300;
-    font-size: 20px;
+    font-size: 1.65rem;
     padding-right: 15px;
 }
 
 .statistics .users-head h4{
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 600;
-    padding-left: 15px;
+    margin-left: 20px;
 }
 
 .statistics div#users{
     display: flex;
     flex-direction: column;
+    transform: translateY(-25px);
 }
 
 .statistics div#users-img{
@@ -216,11 +251,11 @@ main p{
 }
 
 #user-img-1{
-    left: 50px;
+    left: 35px;
 }
 
 #user-img-2{
-    left: 25px;
+    left: 15px;
 }
 
 #user-img-3{
@@ -228,15 +263,15 @@ main p{
 }
 
 #user-img-4{
-    left: -25px;
+    left: -15px;
 }
 
 #user-img-5{
-    left: -50px;
+    left: -35px;
 }
 
 .trending{
-    margin-top: 25px;
+    margin-top: 20px;
     height: 100vh;
     padding: 25px 20px;
     display: flex;
@@ -298,22 +333,19 @@ main p{
     position: relative;
     border-radius: 20px 20px 0 0;
     opacity: 1;
-    background: url("bookcover.jpg");
-    background-size: cover;
 }
 
 .top-list-artist{
-    width: 80%;
+    width: 85%;
     height: 80vh;
-    background-color: rgb(85, 85, 85);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 25px 0 50px;
 }
 
 .top-list-content{
-    background-color: darkgreen;
-    width: 20%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -322,17 +354,185 @@ main p{
 }
 
 .top-list-banner{
-    width: 70%;
-    background-color: cadetblue;   
-    height: 80%;
+    width: 65%;   
+    height: 70%;
+    padding: 10px 0px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .top-list-img{
-    width: 500px;
-    height: 200px;
-    background-color: darkblue;
-    padding: 15px 25px;
+    width: 400px;
+    height: 350px;
+    border-radius: 50px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(55px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-artist-image{
+    width: 125px;
+    height: 125px;
+    background-color: bisque;
+    position: absolute;
+    top: -60px;
+    border-radius: 50%;
+}
+
+.top-artist-info{
+    margin-top: 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-artist-info h5{
+    font-size: 1.35rem;
+    font-weight: 500;
+}
+
+.top-artist-info p{
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+.top-artist-banner{
+    background-color: blanchedalmond;
+    height: 50%;
+    width: 100%;
+    border-radius: 50px;
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+
+.publications{
+    height: 14vh;
+    width: 80%;
+    margin: 25px 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.publication-img{
+    width: 200px;
+    height: 100px;
+    transform: scale(1.1);
+}
+
+.subscribe{
+    margin: 15px 0;
+    height: 90vh;
+    width: 82%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subscribe h1{
+    font-size: 5.25rem;
+    font-weight: 600;
+    line-height: 7rem;
+    margin: 50px 0 40px;
+}
+
+.subscribe p{
+    font-size: 1.25rem;
+    margin: 15px 0;
+    width: 90%;
+}
+
+.subscribe button{
+    width: fit-content;
+    cursor: pointer;
+    padding: 20px 60px;
+    margin: 35px 0;
+    font-family: 'Poppins';
+    border: none;
+    margin-right: 15px;
+    background-color: rgb(209, 255, 118);
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    background: rgb(255,229,130);
+    background: linear-gradient(129deg, rgba(255,229,130,1) 0%, rgba(204,255,153,1) 100%);
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 82%;
+    height: 40vh;
+    margin-top: 65px;
+    margin-bottom: 90px;
+}
+
+.footer-div{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 15%;
+}
+
+.footer-head{
+    width: 30%;
+    justify-content: space-between;
+    margin-right: 25px;
+}
+
+.footer-head .social{
+    width: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.social .social-handle{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: bisque;
+    margin-right: 30px;
+}
+
+h4.footer-list-head{
+    font-size: 1.35rem;
+    letter-spacing: 0.05rem;
+    font-weight: 500;
+}
+
+.footer-div p{
+    letter-spacing: 0.01rem;
+    font-size: 0.9rem;
+    opacity: 0.95;
+}
+
+.footer-div span{
+    font-size: 0.8rem;
+    opacity: 0.8;
+    letter-spacing: 0.01rem;
+}
+
+.footer-div ul{
+    list-style-type: none;
+}
+
+.footer-list{
+    margin-top: 18px;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.footer-list li{
+    padding: 8px 0;
+    opacity: 0.85;
 }
