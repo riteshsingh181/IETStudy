@@ -41,6 +41,11 @@ header span{
 a{
     color: white;
     text-decoration: none;
+    transition: 1s ease;
+}
+
+a:hover{
+    color: gold;
 }
 
 nav ul{
