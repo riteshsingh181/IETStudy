@@ -38,6 +38,11 @@ header span{
     padding: 5px;
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
+
 nav ul{
     display: flex;
     width: 75%;
@@ -66,6 +71,10 @@ nav ul button:hover{
     color: black;
     background: rgb(255,229,130);
     background: linear-gradient(129deg, rgba(255,229,130,1) 0%, rgba(204,255,153,1) 100%);
+}
+
+nav ul button:hover a{
+    color: black;
 }
 
 main{
@@ -126,6 +135,12 @@ main p{
     font-weight: 400;
     background: rgb(255,229,130);
     background: linear-gradient(129deg, rgba(255,229,130,1) 0%, rgba(204,255,153,1) 100%);
+    transition: 1s ease;
+}
+
+.main-text button#get-started:hover{
+    background: rgb(255,229,130);
+    background: linear-gradient(210deg, rgba(255,229,130,1) 0%, rgba(204,255,153,1) 100%);
 }
 
 .main-text button#learn-more{
