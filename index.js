@@ -32,8 +32,8 @@ app.get("/home", (req, res)=>{
 });
 
 app.get("/study-material", async (req, res)=>{
-    const studentListings = await Listing.find({});
-    res.render("study-material.ejs", {studentListings});
+    /* const studentListings = await Listing.find({}); */
+    res.render("study-material.ejs"/* , {studentListings} */);
 })
 
 
