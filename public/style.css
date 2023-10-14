@@ -48,6 +48,10 @@ a:hover{
     color: gold;
 }
 
+.active-link a{
+    color: gold;
+}
+
 nav ul{
     display: flex;
     width: 75%;
@@ -555,4 +559,361 @@ h4.footer-list-head{
 .footer-list li{
     padding: 8px 0;
     opacity: 0.85;
+}
+
+
+/*study-material page -- begins*/
+
+
+.study-material-search{
+    width: 80%;
+    height: 78vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 35px 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    backdrop-filter: blur(55px);
+}
+
+.search-container{
+    width: 80%;
+    padding: 25px 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+}
+
+.search-container h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 0.01rem;
+}
+
+.search-element{
+    width: 80%;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.search-element input{
+    width: 550px;
+    border-radius: 50px;
+    border: none;
+    padding: 0 30px;
+}
+
+.search-element input::placeholder{
+    font-size: 14px;
+    font-family: 'Poppins';
+}
+
+.search-element button{
+    cursor: pointer;
+    font-family: 'Poppins';
+    border: none;
+    background-color: rgb(209, 255, 118);
+    border-radius: 50px;
+    font-size: 14px;
+    padding: 0 42px;
+    font-weight: 400;
+    background: rgb(255,229,130);
+    background: linear-gradient(129deg, rgba(255,229,130,1) 0%, rgba(204,255,153,1) 100%);
+    transition: 1s ease;
+}
+
+.material-search{
+    height: 20vh;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.material-search ul li{
+    list-style-type: none;
+    margin: 10px 0;
+    width: 750px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.material-search ul li label{
+    font-size: 1.3rem;
+}
+
+select{
+    padding: 15px 25px;
+    width: 350px;
+    border-radius: 15px;
+    font-family: 'Poppins';
+    font-size: 1rem;
+    direction: down;
+}
+
+select:focus option{
+    padding: 10px;
+}
+
+.study-material-content{
+    width: 80%;
+    height: 245vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.study-material-content section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.study-material-content h2{
+    font-size: 2.15rem;
+    padding: 15px 0;
+}
+
+.study-material-content h3{
+    font-size: 1.2rem;
+}
+
+.available-resources{
+    display: flex;
+    flex-direction: column;
+}
+
+.available-resources .study-resource-container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 70vh;
+}
+
+.study-resource{
+    width: 30%;
+    height: 250px;
+    background-color: bisque;
+    border-radius: 15px;
+}
+
+.material-list{
+    margin: 50px 0;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.material-list .material-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.material-container .material{
+    height: 250px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: rgb(193, 156, 103);
+}
+
+.material button{
+    color: white;
+    padding: 18px 35px;
+    border-radius: 50px;
+    font-family: 'Poppins';
+    background: none;
+    border: 2px solid white;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.material button:hover{
+    color: black;
+    background: rgb(255,229,130);
+    background: linear-gradient(129deg, rgba(255,229,130,1) 0%, rgba(204,255,153,1) 100%);
+}
+
+.upload{
+    height: 100vh;
+    width: 100%;
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    backdrop-filter: blur(55px);
+}
+
+.upload select{
+    border: none;
+}
+
+.upload-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 60%;
+    height: 75vh;
+}
+
+.upload h3{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-top: 35px;
+}
+
+.upload label{
+    font-size: 1.2rem;
+}
+
+.uploader-info ul li{
+    margin: 20px 0;
+}
+
+.upload button{
+    cursor: pointer;
+    font-family: 'Poppins';
+    border: none;
+    background-color: rgb(209, 255, 118);
+    border-radius: 50px;
+    font-size: 14px;
+    padding: 17px 100px;
+    font-weight: 400;
+    background: rgb(255,229,130);
+    background: linear-gradient(129deg, rgba(255,229,130,1) 0%, rgba(204,255,153,1) 100%);
+    transition: 1s ease;
+    margin-top: 20px;
+    width: fit-content;
+    align-self: center;
+}
+
+.upload input{
+    padding: 20px 25px;
+    border-radius: 15px;
+    border: none;
+    width: 300px;
+}
+
+.upload input::placeholder{
+    font-family: 'Poppins';
+}
+
+.upload ul li{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.user-interaction{
+    height: 100vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 40px 0;
+}
+
+.user-interaction h2{
+    font-size: 2.15rem;
+}
+
+.user-interaction h3{
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.user-interaction ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.user-interaction .user-profile{
+    background-color: bisque;
+    color: black;
+    border-radius: 15px;
+    height: 300px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.discussion{
+    height: 65vh;
+    width: 80%;
+    margin: 35px 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.discussion h2{
+    font-size: 2.15rem;
+}
+
+.discussion ul{
+    margin-top: 15px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+}
+
+.discussion h3{
+    font-weight: 400;
+    opacity: 0.85;
+}
+
+.discussion .comment{
+    padding: 25px;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.comment-content{
+    height: 10vh;
+    background-color: rgb(106, 106, 106);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.user-profile-img{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    position: relative;
+    background-color: #fff;
 }
