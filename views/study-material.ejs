@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Material</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span>IETNexus</span>
+            <nav>
+                <ul>
+                    <li><a href="http://localhost:8080/home">Home</a></li>
+                    <li class="active-link"><a href="">Study Material</a></li>
+                    <li><a href="">Seniors' Corner</a></li>
+                    <li><a href="">Community</a></li>
+                    <button><a href="">Student Profile</a></button>
+                </ul>
+            </nav>
+        </header>
+        <section class="study-material-search">
+            <div class="search-container">
+                <h2>Streamline Your Study Material Hunt.</h2>
+                <div class="search-element">
+                    <input type="text" name="" id="search" placeholder="Search Bar: Quick keyword-based material search.">
+                    <button class="search-btn">Search</button>
+                </div>
+            </div>
+            <div class="material-search">
+                <ul>
+                    <li>
+                        <label for="branch-selection">Branch Selection:</label>
+                        <select id="branch-selection">
+                            <!-- Add options for courses/branches here -->
+                            <option value="select" selected disabled>Select your branch</option>
+                            <option value="cse">Computer Science</option>
+                            <option value="it">Information Technology</option>
+                            <option value="e&tc">Electronics & Telecommunication</option>
+                            <option value="e&i">Electronics & Instrumentation</option>
+                            <option value="mech">Mechanical</option>
+                            <option value="civil">Civil</option>
+                            <!-- Add more options as needed -->
+                        </select>
+                    </li>
+                    <li>
+                        <label for="subject-selection">Subject Selection:</label>
+                        <select id="subject-selection">
+                            <!-- Add options for subjects/modules here -->
+                            <option value="select" selected disabled>Select the subject</option>
+                            <option value="Mathematics">Mathematics</option>
+                            <option value="Physics">Physics</option>
+                            <option value="Chemistry">Chemistry</option>
+                            <option value="ComputerScience">Computer Science and Programming</option>
+                            <option value="EngineeringMechanics">Engineering Mechanics</option>
+                            <option value="StaticsAndDynamics">Statics and Dynamics</option>
+                            <option value="Thermodynamics">Thermodynamics</option>
+                            <option value="FluidMechanics">Fluid Mechanics</option>
+                            <option value="MaterialsScience">Materials Science</option>
+                            <option value="StrengthOfMaterials">Strength of Materials</option>                
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <main class="study-material-content">
+            <section>
+                <h2>Discover Learning Material</h2>
+                <div class="available-resources">
+                    <h3>Available Resources</h3>
+                    <!-- Display available study materials for the selected subject -->
+                    <div class="study-resource-container">
+                        <div class="study-resource"></div>
+                        <div class="study-resource"></div>
+                        <div class="study-resource"></div>
+                        <div class="study-resource"></div>
+                        <div class="study-resource"></div>
+                        <div class="study-resource"></div>
+                    </div>
+                </div>
+                <div class="material-list">
+                    <h3>Material List</h3>
+                    <!-- A list of study materials with download options -->
+                    <!-- Material Type: Indicate whether it's notes, presentations, textbooks, etc. -->
+                    <!-- Ratings: User ratings for materials -->
+                    <!-- Reviews: Comments and reviews for materials -->
+                    <!-- Upload Date: Date of material upload -->
+                    <div class="material-container">
+                        <div class="material">
+                            <h4 class="material-name">Book 1</h4>
+                            <div class="ratings"></div>
+                            <p class="upload-date">24 Sep 2023</p>
+                            <button class="download-btn">Download</button>
+                        </div>
+                        <div class="material">
+                            <h4 class="material-name">Book 2</h4>
+                            <div class="ratings"></div>
+                            <p class="upload-date">25 July 2023</p>
+                            <button class="download-btn">Download</button>
+                        </div>
+                        <div class="material">
+                            <h4 class="material-name">Book 3</h4>
+                            <div class="ratings"></div>
+                            <p class="upload-date">10 Oct 2023</p>
+                            <button class="download-btn">Download</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="upload">
+                    <h3>Upload Material</h3>
+                    <div class="upload-container">
+                        <div class="uploader-info">
+                            <ul>
+                                <li>
+                                    <label for="uploader-name">Your Name:</label>
+                                    <input type="text" placeholder="type your name" id="uploader-name">
+                                </li>
+                                <li>
+                                    <label for="uploader-branch">Your Branch:</label>
+                                    <select id="uploader-branch">
+                                        <!-- Add options for courses/branches here -->
+                                        <option value="select" selected disabled>Select your branch</option>
+                                        <option value="cse">Computer Science</option>
+                                        <option value="it">Information Technology</option>
+                                        <option value="e&tc">Electronics & Telecommunication</option>
+                                        <option value="e&i">Electronics & Instrumentation</option>
+                                        <option value="mech">Mechanical</option>
+                                        <option value="civil">Civil</option>
+                                        <!-- Add more options as needed -->
+                                    </select>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <label for="uploader-year">Currently in:</label>
+                                    <select id="uploader-year">
+                                        <!-- Add options for courses/branches here -->
+                                        <option value="select" selected disabled>Select the year of course</option>
+                                        <option value="cse">4th Year</option>
+                                        <option value="it">3rd Year</option>
+                                        <option value="e&tc">2nd Year</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="upload-material-type">
+                            <ul>
+                                <li>
+                                    <label for="material-type">Material Type:</label>
+                                    <select id="material-type">
+                                        <!-- Add options for material types (e.g., notes, presentations, textbooks, etc.) here -->
+                                        <option value="notes">Notes</option>
+                                        <option value="presentations">Presentations</option>
+                                        <option value="textbooks">Textbooks</option>
+                                        <!-- Add more options as needed -->
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="upload-date-div">
+                            <ul>
+                                <li>
+                                    <label for="upload-date">Upload Date:</label>
+                                    <input type="date" id="upload-date">
+                                </li>
+                            </ul>
+                        </div>
+                        <button id="upload-button">Upload Material</button>
+                    </div>
+                </div>                
+            </section>
+        </main>
+        <section class="user-interaction">
+            <h2>User Interaction</h2>
+            <div>
+                <h3>User Profiles</h3>
+                <ul>
+                    <% for( let listing of studentListings ) { %>
+                    <li>
+                        <div class="user-profile">
+                            <div class="user-profile-img"></div>
+                            <div class="user-info">
+                                <h4><%= listing.name %></h4>
+                                <p>Year <%= listing.year %></p>
+                                <p>Branch : <%= listing.branch %></p>
+                                <p>Contributions: <%= listing.contributions %></p>
+                                <p>Ratings: <%= listing.ratings %></p>
+                            </div>
+                        </div>
+                    </li>
+                    <% } %>
+                </ul>
+            </div>
+        </section>
+        <section class="discussion">
+            <h2>Discussion and Feedback</h2>
+            <div>
+                <!-- Comments and discussion threads can be represented as a list -->
+                <ul class="discussion-list">
+                    <!-- Comment 1 -->
+                    <li>
+                        <div class="comment">
+                            <img src="user-avatar-1.jpg" alt="User 1">
+                            <div class="comment-content">
+                                <p class="comment-user">User 1</p>
+                                <p class="comment-text">I have a question about Chapter 3. Can someone help?</p>
+                                <p class="comment-date">Posted on: October 14, 2023</p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Comment 2 -->
+                    <li>
+                        <div class="comment">
+                            <img src="user-avatar-2.jpg" alt="User 2">
+                            <div class="comment-content">
+                                <p class="comment-user">User 2</p>
+                                <p class="comment-text">Sure, I can help. What's your question?</p>
+                                <p class="comment-date">Posted on: October 15, 2023</p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Add more comments and discussion threads as needed -->
+                </ul>
+            </div>
+        </section>        
+        <footer>
+            <div class="footer-div footer-head">
+                <h4 class="footer-list-head">IETNexus</h4>
+                <p>Elevate your academic journey at IET DAVV.<br>Share materials, connect with seniors, and thrive in a vibrant learning community. Join us now!
+                <div class="social">
+                    <div class="social-handle"></div>
+                    <div class="social-handle"></div>
+                    <div class="social-handle"></div>
+                    <div class="social-handle"></div>
+                </div>
+                <span class="copyright">Copyright © 2023 IETNexus.<br>All rights reserved.</span>
+            </div>
+            <div class="footer-div">
+                <h4 class="footer-list-head">Explore</h4>
+                <ul class="footer-list">
+                    <li class="footer-link">Study Material</li>
+                    <li class="footer-link">Seniors' Corner</li>
+                    <li class="footer-link">Community</li>
+                </ul>
+            </div>
+            <div class="footer-div">
+                <h4 class="footer-list-head">Statistic</h4>
+                <ul class="footer-list">
+                    <li class="footer-link">Ranking</li>
+                    <li class="footer-link">Activity</li>
+                </ul>
+            </div>
+            <div class="footer-div">
+                <h4 class="footer-list-head">Resource</h4>
+                <ul class="footer-list">
+                    <li class="footer-link">Branches</li>
+                    <li class="footer-link">Books</li>
+                    <li class="footer-link">Notes</li>
+                    <li class="footer-link">FAQ</li>
+                </ul>
+            </div>
+            <div class="footer-div">
+                <h4 class="footer-list-head">The Git Gurus</h4>
+                <ul class="footer-list">
+                    <li class="footer-link">About Us</li>
+                    <li class="footer-link">Contribute</li>
+                    <li class="footer-link">Support</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
