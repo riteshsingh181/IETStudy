@@ -26,6 +26,10 @@
         <section class="study-material-search">
             <div class="search-container">
                 <h2>Streamline Your Study Material Hunt.</h2>
+                <p style="padding: 15px 35px; background-color: bisque; border-radius: 15px;">
+                    <a style="color: black;" href="/show-material">Show Materials</a>
+                </p>
+                <br>
                 <div class="search-element">
                     <input type="text" name="" id="search" placeholder="Search Bar: Quick keyword-based material search.">
                     <button class="search-btn">Search</button>
@@ -110,66 +114,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="upload">
-                    <h3>Upload Material</h3>
+                <div class="upload" style="height: 60vh; margin-bottom: 0;">
                     <div class="upload-container">
-                        <div class="uploader-info">
-                            <ul>
-                                <li>
-                                    <label for="uploader-name">Your Name:</label>
-                                    <input type="text" placeholder="type your name" id="uploader-name">
-                                </li>
-                                <li>
-                                    <label for="uploader-branch">Your Branch:</label>
-                                    <select id="uploader-branch">
-                                        <!-- Add options for courses/branches here -->
-                                        <option value="select" selected disabled>Select your branch</option>
-                                        <option value="cse">Computer Science</option>
-                                        <option value="it">Information Technology</option>
-                                        <option value="e&tc">Electronics & Telecommunication</option>
-                                        <option value="e&i">Electronics & Instrumentation</option>
-                                        <option value="mech">Mechanical</option>
-                                        <option value="civil">Civil</option>
-                                        <!-- Add more options as needed -->
-                                    </select>
-                                </li>
-                            </ul>
-                            <ul>
-                                <li>
-                                    <label for="uploader-year">Currently in:</label>
-                                    <select id="uploader-year">
-                                        <!-- Add options for courses/branches here -->
-                                        <option value="select" selected disabled>Select the year of course</option>
-                                        <option value="cse">4th Year</option>
-                                        <option value="it">3rd Year</option>
-                                        <option value="e&tc">2nd Year</option>
-                                    </select>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="upload-material-type">
-                            <ul>
-                                <li>
-                                    <label for="material-type">Material Type:</label>
-                                    <select id="material-type">
-                                        <!-- Add options for material types (e.g., notes, presentations, textbooks, etc.) here -->
-                                        <option value="notes">Notes</option>
-                                        <option value="presentations">Presentations</option>
-                                        <option value="textbooks">Textbooks</option>
-                                        <!-- Add more options as needed -->
-                                    </select>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="upload-date-div">
-                            <ul>
-                                <li>
-                                    <label for="upload-date">Upload Date:</label>
-                                    <input type="date" id="upload-date">
-                                </li>
-                            </ul>
-                        </div>
-                        <button id="upload-button">Upload Material</button>
+                        <h3>Contribute to the Learning Community. <br>Share Your Study Material Now!</h3>
+                        <a class="upload-button-link" style="align-self: flex-start; color: black;" href="/upload">
+                            Upload Material
+                        </a>
                     </div>
                 </div>                
             </section>
@@ -179,16 +129,16 @@
             <div>
                 <h3>User Profiles</h3>
                 <ul>
-                    <% for( let listing of studentListings ) { %>
+                    <% for( let index = 0; index < 6; index++ ) { %>
                     <li>
                         <div class="user-profile">
                             <div class="user-profile-img"></div>
                             <div class="user-info">
-                                <h4><%= listing.name %></h4>
-                                <p>Year <%= listing.year %></p>
-                                <p>Branch : <%= listing.branch %></p>
-                                <p>Contributions: <%= listing.contributions %></p>
-                                <p>Ratings: <%= listing.ratings %></p>
+                                <h4><%= studentListings[index].name %></h4>
+                                <p>Year <%= studentListings[index].year %></p>
+                                <p>Branch : <%= studentListings[index].branch %></p>
+                                <p>Contributions: <%= studentListings[index].contributions %></p>
+                                <p>Ratings: <%= studentListings[index].ratings %></p>
                             </div>
                         </div>
                     </li>

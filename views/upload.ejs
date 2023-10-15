@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Your Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <main>
+        <div class="upload">
+            <form action="" method="post">
+                <h3>Upload Material</h3>
+            <div class="upload-container">
+                <div class="uploader-info">
+                        <ul>
+                            <li>
+                                <label for="uploader-name">Your Name:</label>
+                                <input name="listing[name]" type="text" placeholder="type your name" id="uploader-name">
+                            </li>
+                            <li>
+                                <label for="uploader-branch">Your Branch:</label>
+                                <input name="listing[branch]" type="text" placeholder="type your branch as displayed on the IET website">
+                                <!-- <select id="uploader-branch"> -->
+                                    <!-- Add options for courses/branches here --><!-- 
+                                    <option value="select" selected disabled>Select your branch</option>
+                                    <option name="listing[branch]" value="cse">Computer Science</option>
+                                    <option name="listing[branch]" value="it">Information Technology</option>
+                                    <option name="listing[branch]" value="e&tc">Electronics & Telecommunication</option>
+                                    <option name="listing[branch]" value="e&i">Electronics & Instrumentation</option>
+                                    <option name="listing[branch]" value="mech">Mechanical</option>
+                                    <option name="listing[branch]" value="civil">Civil</option> -->
+                                    <!-- Add more options as needed -->
+                                <!-- </select> -->
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <label for="uploader-year">Currently in:</label>
+                                <input name="listing[year]" type="text" placeholder="type your year of course in integer">
+                                <!-- <select id="uploader-year"> -->
+                                    <!-- Add options for courses/branches here -->
+                                    <!-- <option name="listing[year]" value="select" selected disabled>Select the year of course</option>
+                                    <option name="listing[year]" value="cse">4th Year</option>
+                                    <option name="listing[year]" value="it">3rd Year</option>
+                                    <option name="listing[year]" value="e&tc">2nd Year</option>
+                                </select> -->
+                            </li>
+                        </ul>
+                </div>
+                <div class="upload-material-type">
+                    <ul>
+                        <li>
+                            <label for="material-type">Material Type:</label>
+                                <input name="listing[type]" type="text" placeholder="type your material type" id="uploader-name">
+                            <!-- <select id="material-type"> -->
+                                <!-- Add options for material types (e.g., notes, presentations, textbooks, etc.) here -->
+                                <!-- <option name="listing[]" value="notes">Notes</option>
+                                <option name="listing[]" value="presentations">Presentations</option>
+                                <option name="listing[]" value="textbooks">Textbooks</option> -->
+                                <!-- Add more options as needed -->
+                            <!-- </select> -->
+                        </li>
+                    </ul>
+                </div>
+                <div class="upload-link-div">
+                    <ul>
+                        <li>
+                            <label for="material-link">Material Link:</label>
+                            <input name="listing[file]" type="text" placeholder="type your google drive link" id="uploader-name">
+                        </li>
+                    </ul>
+                </div>
+                <div class="upload-file-desc">
+                    <ul>
+                        <li>
+                            <label for="material-desc">Material Small Desc:</label>
+                            <input name="listing[desc]" type="text" placeholder="describe shortly about your file">
+                        </li>
+                    </ul>
+                </div>
+                <div class="upload-date-div">
+                    <ul>
+                        <li>
+                            <label for="upload-date">Upload Date:</label>
+                            <input type="date" id="upload-date" name="listing[date]">
+                        </li>
+                    </ul>
+                </div>
+                <button id="upload-button" type="submit">Upload Material</button>
+            </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

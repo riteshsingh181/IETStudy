@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Material</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="show-material">
+        <ul>
+            <% for( let listing of studentListings ) { %>
+                <% if (listing.file) { %>
+                    <li>Name: &nbsp; <%= listing.name %></li>
+                    <li>Branch: &nbsp; <%= listing.branch %></li>
+                    <li>Year: &nbsp; <%= listing.year %></li>
+                    <li>Description: &nbsp; <%= listing.desc %></li>
+                    <li>File Link: &nbsp; <a style="color: bisque;" href="<%= listing.file %>">Visit the file</a></li>
+                    <li>Date: &nbsp; <%= listing.date %></li>
+                    <div style="align-self: flex-end;">
+                        <a href="/show-material/:<%= listing._id %>"><button style="align-self: flex-end;"  class="edit">Edit</button></a>
+                        <button style="align-self: flex-end;" class="delete">Delete</button>
+                    </div>
+                <% } %>
+            <% } %>
+        </ul>
+    </div>
+</body>
+</html>

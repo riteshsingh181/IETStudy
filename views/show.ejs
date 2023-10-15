@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit the data</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Your Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <main>
+        <div class="upload">
+            <form action="/show-material/<%= listing._id %>" method="GET">
+            <h3>Edit the Material</h3>
+            <div class="upload-container">
+                <div class="uploader-info">
+                        <ul>
+                            <li>
+                                <label for="uploader-name"><%= listing.name %>></label>
+                            </li>
+                            <li>
+                                <label for="uploader-branch"><%= listing.branch %>></label>
+                                <!-- <select id="uploader-branch"> -->
+                                    <!-- Add options for courses/branches here --><!-- 
+                                    <option value="select" selected disabled>Select your branch</option>
+                                    <option name="listing[branch]" value="cse">Computer Science</option>
+                                    <option name="listing[branch]" value="it">Information Technology</option>
+                                    <option name="listing[branch]" value="e&tc">Electronics & Telecommunication</option>
+                                    <option name="listing[branch]" value="e&i">Electronics & Instrumentation</option>
+                                    <option name="listing[branch]" value="mech">Mechanical</option>
+                                    <option name="listing[branch]" value="civil">Civil</option> -->
+                                    <!-- Add more options as needed -->
+                                <!-- </select> -->
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <label for="uploader-year">Currently in: <%= listing.year %></label>
+                                <!-- <select id="uploader-year"> -->
+                                    <!-- Add options for courses/branches here -->
+                                    <!-- <option name="listing[year]" value="select" selected disabled>Select the year of course</option>
+                                    <option name="listing[year]" value="cse">4th Year</option>
+                                    <option name="listing[year]" value="it">3rd Year</option>
+                                    <option name="listing[year]" value="e&tc">2nd Year</option>
+                                </select> -->
+                            </li>
+                        </ul>
+                </div>
+                <div class="upload-link-div">
+                    <ul>
+                        <li>
+                            <label for="material-link">Material Link: <%= listing.file %></label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="upload-file-desc">
+                    <ul>
+                        <li>
+                            <label for="material-desc">Material Small Desc: <%= listing.desc %></label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
+</body>
+</html>
