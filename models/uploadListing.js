@@ -14,22 +14,18 @@ const listingSchema = new Schema({
         type: String,
         required: true
     },
-    contributions: {
+    type: {
         type: String,
     },
-    ratings: {
-        type: Number,
-    },
     date: {
-        type: Date,
+        type: Number,
+        required: true
     },
     file: {
         type: String,
-    },
-    desc:{
-        type: String
+        required: true
     }
 })
 
-const Listing = mongoose.model("Listing", listingSchema);
-module.exports = Listing;
+const uploadListing = mongoose.model("uploadListing", listingSchema);
+module.exports = uploadListing;
